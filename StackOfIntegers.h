@@ -1,7 +1,7 @@
-#include <iostream>
-
 #ifndef STACKOFINTEGERS_H_INCLUDED
 #define STACKOFINTEGERS_H_INCLUDED
+
+#include <iostream>
 
 class StackOfIntegers
 {

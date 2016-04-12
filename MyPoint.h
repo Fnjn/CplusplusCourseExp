@@ -1,8 +1,8 @@
-#include <iostream>
-#include <cmath>
-
 #ifndef MYPOINT_H_INCLUDED
 #define MYPOINT_H_INCLUDED
+
+#include <iostream>
+#include <cmath>
 
 class MyPoint
 {
@@ -23,16 +23,16 @@ private:
     double y;
 };
 
-class _3DPoint::MyPoint
+class _3DPoint:public MyPoint
 {
 public:
     _3DPoint();
-    _3DPoint(double x, double y);
+    _3DPoint(double x, double y, double z);
 
     void setZ(double z);
     double getZ();
 
-    double distance(MyPoint P2);
+    double distance(_3DPoint P2);
 
 
 private:

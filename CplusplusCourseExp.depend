@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1460503612 source:f:\github\cpluspluscourseexp\main.cpp
+	"Account.cpp"
+	"MyPoint.cpp"
+	"StackOfIntegers.cpp"
+	"Loan.cpp"
+
+1460502059 f:\github\cpluspluscourseexp\account.cpp
+	"Account.h"
+
+1460502059 f:\github\cpluspluscourseexp\account.h
+	<iostream>
+	<time.h>
+
+1460502534 f:\github\cpluspluscourseexp\mypoint.cpp
+	"MyPoint.h"
+
+1460503537 f:\github\cpluspluscourseexp\mypoint.h
+	<iostream>
+	<cmath>
+
+1460502059 f:\github\cpluspluscourseexp\stackofintegers.cpp
+	"StackOfIntegers.h"
+
+1460502059 f:\github\cpluspluscourseexp\stackofintegers.h
+	<iostream>
+
+1460502059 f:\github\cpluspluscourseexp\loan.cpp
+	"Loan.h"
+
+1460502059 f:\github\cpluspluscourseexp\loan.h
+	<iostream>
+	<cmath>
+
+1460502059 source:f:\github\cpluspluscourseexp\account.cpp
+	"Account.h"
+
+1460502059 source:f:\github\cpluspluscourseexp\loan.cpp
+	"Loan.h"
+
+1460502534 source:f:\github\cpluspluscourseexp\mypoint.cpp
+	"MyPoint.h"
+
+1460502059 source:f:\github\cpluspluscourseexp\stackofintegers.cpp
+	"StackOfIntegers.h"
+

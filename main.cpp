@@ -1,5 +1,5 @@
 #include "Account.cpp"
-//#include "MyPoint.cpp"
+#include "MyPoint.cpp"
 #include "StackOfIntegers.cpp"
 #include "Loan.cpp"
 
@@ -14,9 +14,13 @@ int main()
     cout<<A1.getBalance()<<"\t"<<A1.getMonthlyInterestRate()<<"\t"<<A1.getSetUpTime()<<endl;
 
 /*实验2 MyPoint类*/
-//    MyPoint P1;
-//    MyPoint P2(10,30.5);
-//    cout<<P1.distance(P2)<<endl;
+    MyPoint P1;
+    MyPoint P2(10,30.5);
+    cout<<P1.distance(P2)<<endl;
+
+    _3DPoint P3;
+    _3DPoint P4(10,30,25.5);
+    cout<<P3.distance(P4)<<endl;
 
 /*实验3 StackOfIntegers类*/
     StackOfIntegers S1;

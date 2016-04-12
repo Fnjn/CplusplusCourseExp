@@ -39,17 +39,13 @@ double MyPoint::distance(MyPoint P2)
 }
 
 
-_3DPoint::_3DPoint()
+_3DPoint::_3DPoint():MyPoint()
 {
-    x = 0;
-    y = 0;
     z = 0;
 }
 
-_3DPoint::_3DPoint(double x, double y, double z)
+_3DPoint::_3DPoint(double x, double y, double z):MyPoint(x, y)
 {
-    this->x = x;
-    this->y = y;
     this->z = z;
 }
 
@@ -61,4 +57,9 @@ void _3DPoint::setZ(double z)
 double _3DPoint::getZ()
 {
     return z;
+}
+
+double _3DPoint::distance(_3DPoint P2)
+{
+    return sqrt(pow((getX() - P2.getX()),2) + pow((getY() - P2.getY()),2) + pow((getZ() - P2.getZ()),2));
 }

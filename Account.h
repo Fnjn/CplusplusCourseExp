@@ -1,8 +1,9 @@
+#ifndef ACCOUNT_H_INCLUDED
+#define ACCOUNT_H_INCLUDED
+
 #include <iostream>
 #include <time.h>
 
-#ifndef ACCOUNT_H_INCLUDED
-#define ACCOUNT_H_INCLUDED
 
 class Account
 {
