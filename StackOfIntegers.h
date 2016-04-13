@@ -7,7 +7,7 @@
 class EmptyStackException: public logic_error
 {
 public:
-	EmptyStackException()
+	EmptyStackException():logic_error("Error:: Stack is empty!\n"){}
 };
 
 class StackOfIntegers

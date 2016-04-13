@@ -1,10 +1,12 @@
 # depslib dependency file v1.0
-1460550524 source:f:\github\cpluspluscourseexp\main.cpp
+1460583142 source:f:\github\cpluspluscourseexp\main.cpp
 	"Account.cpp"
 	"MyPoint.cpp"
 	"StackOfIntegers.cpp"
 	"Loan.cpp"
 	"Circle.cpp"
+	"Stack.cpp"
+	"STL.cpp"
 
 1460502059 f:\github\cpluspluscourseexp\account.cpp
 	"Account.h"
@@ -20,11 +22,12 @@
 	<iostream>
 	<cmath>
 
-1460502059 f:\github\cpluspluscourseexp\stackofintegers.cpp
+1460580508 f:\github\cpluspluscourseexp\stackofintegers.cpp
 	"StackOfIntegers.h"
 
-1460502059 f:\github\cpluspluscourseexp\stackofintegers.h
+1460554866 f:\github\cpluspluscourseexp\stackofintegers.h
 	<iostream>
+	<stdexcept>
 
 1460550028 f:\github\cpluspluscourseexp\loan.cpp
 	"Loan.h"
@@ -46,10 +49,24 @@
 1460502059 source:f:\github\cpluspluscourseexp\stackofintegers.cpp
 	"StackOfIntegers.h"
 
-1460551119 f:\github\cpluspluscourseexp\circle.cpp
+1460551499 f:\github\cpluspluscourseexp\circle.cpp
 	"Circle.h"
 
-1460551101 f:\github\cpluspluscourseexp\circle.h
+1460551499 f:\github\cpluspluscourseexp\circle.h
 	<iostream>
 	<cmath>
+
+1460581585 f:\github\cpluspluscourseexp\stack.cpp
+	"Stack.h"
+
+1460581508 f:\github\cpluspluscourseexp\stack.h
+	<iostream>
+
+1460583183 f:\github\cpluspluscourseexp\stl.cpp
+	"STL.h"
+
+1460582437 f:\github\cpluspluscourseexp\stl.h
+	<iostream>
+	<map>
+	<fstream>
 

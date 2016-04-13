@@ -3,6 +3,8 @@
 #include "StackOfIntegers.cpp"
 #include "Loan.cpp"
 #include "Circle.cpp"
+#include "Stack.cpp"
+#include "STL.cpp"
 
 using namespace std;
 
@@ -36,7 +38,7 @@ int main()
     Circle C1;
     Circle C2(3);
 
-    cout<<"\nC1 < C2 is "<<(C1 < C2)<<endl;
+    cout<<"C1 < C2 is "<<(C1 < C2)<<endl;
     cout<<"C1 <= C2 is "<<(C1 <= C2)<<endl;
     cout<<"C1 == C2 is "<<(C1 == C2)<<endl;
     cout<<"C1 != C2 is "<<(C1 != C2)<<endl;
@@ -44,6 +46,27 @@ int main()
     cout<<"C1 >= C2 is "<<(C1 >= C2)<<endl;
 
 /*实验6 修改StackOfIntegers类*/
+    StackOfIntegers S2;
+    try
+    {
+        S2.pop();
+    }
+    catch(EmptyStackException &ex)
+    {
+        cout<<ex.what();
+    }
+
+/*实验7 扩展Stack类*/
+    Stack<double> S3;
+    S3.push(1.7);
+    S3.push(3.0/2);
+    S3.printStack();
+
+    cout<<"S3 contains 1.5 is "<<S3.contains(1.5)<<endl;
+    cout<<"S3 contains 3.2 is "<<S3.contains(3.2)<<endl;
+
+/*实验8 STL容器*/
+    countText("Night watcher swear.txt");
 
     return 0;
 }

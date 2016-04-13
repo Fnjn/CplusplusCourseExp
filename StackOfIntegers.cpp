@@ -29,7 +29,10 @@ void StackOfIntegers::push(int value)
 
 int StackOfIntegers::pop()
 {
-    return elements[--size];
+		if(size == 0)
+			throw EmptyStackException();
+		else  return elements[--size];
+//    return 0;
 }
 
 int StackOfIntegers::getSize()
@@ -41,6 +44,7 @@ void StackOfIntegers::printStack()
 {
     for(int i=0; i<getSize(); i++)
         cout<<elements[i]<<" ";
+	cout<<endl;
 }
 
 bool isPrime(int n)
