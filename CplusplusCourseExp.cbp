@@ -32,14 +32,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="Account.cpp" />
-		<Unit filename="Account.h" />
-		<Unit filename="Loan.cpp" />
-		<Unit filename="Loan.h" />
-		<Unit filename="MyPoint.cpp" />
-		<Unit filename="MyPoint.h" />
-		<Unit filename="StackOfIntegers.cpp" />
-		<Unit filename="StackOfIntegers.h" />
+		<Unit filename="Circle.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="Circle.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

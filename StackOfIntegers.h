@@ -2,6 +2,13 @@
 #define STACKOFINTEGERS_H_INCLUDED
 
 #include <iostream>
+#include <stdexcept>
+
+class EmptyStackException: public logic_error
+{
+public:
+	EmptyStackException()
+};
 
 class StackOfIntegers
 {

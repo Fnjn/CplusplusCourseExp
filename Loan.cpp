@@ -58,3 +58,11 @@ double Loan::getTotalPayment()
 {
     return getMonthlyPayment() * numberOfYears * 12;
 }
+
+//void outputToFile(char* filename, Loan P1)
+//{
+//	ofstream output;
+//	output.open(filename);
+//	output<<P1<<endl;
+//	output.close();
+//}
