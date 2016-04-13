@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1460583142 source:f:\github\cpluspluscourseexp\main.cpp
+1460585335 source:f:\github\cpluspluscourseexp\main.cpp
 	"Account.cpp"
 	"MyPoint.cpp"
 	"StackOfIntegers.cpp"
@@ -62,11 +62,13 @@
 1460581508 f:\github\cpluspluscourseexp\stack.h
 	<iostream>
 
-1460583183 f:\github\cpluspluscourseexp\stl.cpp
+1460587606 f:\github\cpluspluscourseexp\stl.cpp
 	"STL.h"
 
-1460582437 f:\github\cpluspluscourseexp\stl.h
+1460587366 f:\github\cpluspluscourseexp\stl.h
 	<iostream>
 	<map>
+	<vector>
 	<fstream>
+	<algorithm>
 
