@@ -59,10 +59,42 @@ double Loan::getTotalPayment()
     return getMonthlyPayment() * numberOfYears * 12;
 }
 
-//void outputToFile(char* filename, Loan P1)
-//{
-//	ofstream output;
-//	output.open(filename);
-//	output<<P1<<endl;
-//	output.close();
-//}
+void outputToFile(char* filename, int n, Loan P1, ...)
+{
+	fstream output;
+	output.open(filename, ios::out | ios::binary);
+
+	va_list arg_ptr;
+	Loan tmp = P1;
+
+    output.write((char*)&tmp,sizeof(Loan));
+//	cout<<P1.getLoanAmount()<<endl;
+
+	va_start(arg_ptr, P1);
+	for(int i=0; i<n-1; i++)
+	{
+		tmp = va_arg(arg_ptr, Loan);
+		output.write(reinterpret_cast<char *>(&tmp),sizeof(Loan));
+//		cout<<tmp.getLoanAmount()<<endl;
+	}
+	va_end(arg_ptr);
+
+	output.close();
+}
+
+double calTotalLoanFromFile(char* filename)
+{
+    fstream input;
+    input.open(filename, ios::in | ios::binary);
+    Loan tmp;
+    double totalAmount = 0;
+
+    while(!input.eof())
+    {
+        input.read(reinterpret_cast<char *>(&tmp),sizeof(Loan));
+        totalAmount += tmp.getLoanAmount();
+    }
+
+    input.close();
+    return totalAmount;
+}

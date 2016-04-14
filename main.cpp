@@ -31,8 +31,9 @@ int main()
     S1.printStack();
 
 /*实验4 Loan对象*/
-    Loan L1, L2, L3, L4, L5;
-//    outputToFile("Exercise12_6.dat",&L1);
+    Loan L1(5, 5, 10000), L2(3, 2, 5000), L3, L4(2,1,1000),L5;
+    outputToFile("Exercise12_6.dat", 5, L1,L2,L3,L4,L5);
+    cout<<"Total Loan Amount is "<<calTotalLoanFromFile("Exercise12_6.dat")<<endl;
 
 /*实验5 Circle类*/
     Circle C1;
