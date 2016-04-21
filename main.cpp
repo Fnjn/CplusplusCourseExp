@@ -68,6 +68,5 @@ int main()
 
 /*ÊµÑé8 STLÈÝÆ÷*/
     countText("Night watcher swear.txt");
-
     return 0;
 }
