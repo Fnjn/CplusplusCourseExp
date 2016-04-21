@@ -1,3 +1,4 @@
+#include <cstdlib>
 #include "Account.cpp"
 #include "MyPoint.cpp"
 #include "StackOfIntegers.cpp"
@@ -68,5 +69,6 @@ int main()
 
 /*ÊµÑé8 STLÈÝÆ÷*/
     countText("Night watcher swear.txt");
+	System("pause");
     return 0;
 }
